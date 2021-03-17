@@ -1,0 +1,30 @@
+{
+  "name": "repo.t-avajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/esm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roy Ivy III <rivy.dev@gmail.com> (https://rivy.dev/)",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "esm": "^3.2.25",
+    "nyc": "^15.1.0"
+  },
+  "esm": {
+    "cjs": true
+  },
+  "nyc": {
+    "require": [
+      "esm"
+    ]
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  },
+  "# esm testing notes for ava/nyc": "https://remysharp.com/2019/08/16/build-free-code-and-testing-es-module-imports @@ https://archive.is/SFY9v"
+}
